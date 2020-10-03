@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ This file is part of Life Hacking
+  ~ 
+  ~ Life Hacking is free software: you can redistribute it and/or modify
+  ~ it under the terms of the GNU General Public License as published by
+  ~ the Free Software Foundation, either version 3 of the License, or
+  ~ (at your option) any later version.
+  ~ 
+  ~ Life Hacking is distributed in the hope that it will be useful,
+  ~ but WITHOUT ANY WARRANTY; without even the implied warranty of
+  ~ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+  ~ GNU General Public License for more details.
+  ~ 
+  ~ You should have received a copy of the GNU General Public License
+  ~ along with Life Hacking.  If not, see <https://www.gnu.org/licenses/>.
+  -->
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:id="@+id/navigation"
+            app:startDestination="@id/selectGroupFragment">
+
+    <fragment android:id="@+id/selectGroupFragment"
+              android:name="com.samco.trackandgraph.selectgroup.SelectGroupFragment"
+              android:label="@string/app_name"
+              tools:layout="@layout/fragment_select_group">
+        <action
+                android:id="@+id/action_select_tack_group"
+                app:destination="@id/displayTrackGroupFragment"
+                app:enterAnim="@anim/slide_in_left"
+                app:exitAnim="@anim/slide_out_left"
+                app:popEnterAnim="@anim/slide_in_right"
+                app:popExitAnim="@anim/slide_out_right" />
+        <action
+                android:id="@+id/action_select_graph_stat_group"
+                app:destination="@id/graphsAndStatsFragment"
+                app:enterAnim="@anim/slide_in_left"
+                app:exitAnim="@anim/slide_out_left"
+                app:popEnterAnim="@anim/slide_in_right"
+                app:popExitAnim="@anim/slide_out_right" />
+    </fragment>
+    <fragment android:id="@+id/displayTrackGroupFragment"
+            android:name="com.samco.trackandgraph.displaytrackgroup.DisplayTrackGroupFragment"
+            tools:layout="@layout/fragment_display_track_group">
+        <argument
+                android:name="trackGroup"
+                app:argType="long" />
+        <action
+                android:id="@+id/action_feature_history"
+                app:destination="@id/featureHistoryFragment"
+                app:enterAnim="@anim/slide_in_left"
+                app:exitAnim="@anim/slide_out_left"
+                app:popEnterAnim="@anim/slide_in_right"
+                app:popExitAnim="@anim/slide_out_right" />
+        <argument
+                android:name="trackGroupName"
+                app:argType="string" />
+        <action
+                android:id="@+id/action_add_feature"
+                app:destination="@id/addFeatureFragment"
+                app:enterAnim="@anim/slide_in_left"
+                app:exitAnim="@anim/slide_out_left"
+                app:popEnterAnim="@anim/slide_in_right"
+                app:popExitAnim="@anim/slide_out_right" />
+    </fragment>
+    <fragment android:id="@+id/featureHistoryFragment"
+            android:name="com.samco.trackandgraph.featurehistory.FragmentFeatureHistory"
+            tools:layout="@layout/fragment_feature_history">
+        <argument
+                android:name="feature"
+                app:argType="long" />
+        <argument
+                android:name="featureName"
+                app:argType="string" />
+    </fragment>
+    <fragment
+            android:id="@+id/graphsAndStatsFragment"
+            android:name="com.samco.trackandgraph.graphsandstats.GraphsAndStatsFragment"
+            android:label="@string/graphs_and_statistics"
+            tools:layout="@layout/graphs_and_stats_fragment" >
+        <action
+                android:id="@+id/action_graph_stat_input"
+                app:destination="@id/graphStatInputFragment"
+                app:enterAnim="@anim/slide_in_left"
+                app:exitAnim="@anim/slide_out_left"
+                app:popEnterAnim="@anim/slide_in_right"
+                app:popExitAnim="@anim/slide_out_right" />
+        <action
+                android:id="@+id/action_view_graph_stat"
+                app:destination="@id/viewGraphStatFragment"
+                app:enterAnim="@anim/slide_in_left"
+                app:exitAnim="@anim/slide_out_left"
+                app:popEnterAnim="@anim/slide_in_right"
+                app:popExitAnim="@anim/slide_out_right" />
+        <argument
+                android:name="graphStatGroupId"
+                app:argType="long" />
+        <argument
+                android:name="graphStatGroupName"
+                app:argType="string" />
+    </fragment>
+    <fragment
+            android:id="@+id/graphStatInputFragment"
+            android:name="com.samco.trackandgraph.graphstatinput.GraphStatInputFragment"
+            android:label="@string/add_a_graph_or_stat"
+            tools:layout="@layout/fragment_graph_stat_input" >
+        <argument
+                android:name="graphStatId"
+                app:argType="long"
+                android:defaultValue="-1L" />
+        <argument
+                android:name="graphStatGroupId"
+                app:argType="long" />
+    </fragment>
+    <fragment
+            android:id="@+id/addFeatureFragment"
+            android:name="com.samco.trackandgraph.displaytrackgroup.AddFeatureFragment"
+            android:label="@string/add_feature">
+        <argument
+                android:name="trackGroupId"
+                app:argType="long" />
+        <argument
+                android:name="existingFeatureNames"
+                app:argType="string[]" />
+        <argument
+            android:name="editFeatureId"
+            app:argType="long"
+            android:defaultValue="-1L" />
+    </fragment>
+    <fragment
+            android:id="@+id/viewGraphStatFragment"
+            android:name="com.samco.trackandgraph.viewgraphstat.ViewGraphStatFragment"
+            android:label="ViewGraphStatFragment" >
+        <argument
+                android:name="graphStatId"
+                app:argType="long" />
+    </fragment>
+    <fragment
+        android:id="@+id/backupAndRestoreFragment"
+        android:name="com.samco.trackandgraph.backupandrestore.BackupAndRestoreFragment"
+        android:label="@string/backup_and_restore" />
+    <fragment
+        android:id="@+id/aboutPageFragment"
+        android:name="com.samco.trackandgraph.aboutpage.AboutPageFragment"
+        android:label="@string/about" />
+    <fragment
+        android:id="@+id/FAQFragment"
+        android:name="com.samco.trackandgraph.faq.FAQFragment"
+        android:label="@string/faq" >
+        <action
+            android:id="@+id/action_faq1"
+            app:destination="@id/FAQ1Fragment"
+            app:enterAnim="@anim/slide_in_left"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_right"
+            app:popExitAnim="@anim/slide_out_right" />
+        <action
+            android:id="@+id/action_faq2"
+            app:destination="@id/FAQ2Fragment"
+            app:enterAnim="@anim/slide_in_left"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_right"
+            app:popExitAnim="@anim/slide_out_right" />
+        <action
+            android:id="@+id/action_faq3"
+            app:destination="@id/FAQ3Fragment"
+            app:enterAnim="@anim/slide_in_left"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_right"
+            app:popExitAnim="@anim/slide_out_right" />
+        <action
+            android:id="@+id/action_faq4"
+            app:destination="@id/FAQ4Fragment"
+            app:enterAnim="@anim/slide_in_left"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_right"
+            app:popExitAnim="@anim/slide_out_right" />
+        <action
+            android:id="@+id/action_faq5"
+            app:destination="@id/FAQ5Fragment"
+            app:enterAnim="@anim/slide_in_left"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_right"
+            app:popExitAnim="@anim/slide_out_right" />
+        <action
+            android:id="@+id/action_faq6"
+            app:destination="@id/FAQ6Fragment"
+            app:enterAnim="@anim/slide_in_left"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_right"
+            app:popExitAnim="@anim/slide_out_right" />
+        <action
+            android:id="@+id/action_faq7"
+            app:destination="@id/FAQ7Fragment"
+            app:enterAnim="@anim/slide_in_left"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_right"
+            app:popExitAnim="@anim/slide_out_right" />
+    </fragment>
+    <fragment
+        android:id="@+id/FAQ1Fragment"
+        android:name="com.samco.trackandgraph.faq.FAQ1Fragment"
+        android:label="@string/faq_1" />
+    <fragment
+        android:id="@+id/FAQ2Fragment"
+        android:name="com.samco.trackandgraph.faq.FAQ2Fragment"
+        android:label="@string/faq_2" />
+    <fragment
+        android:id="@+id/FAQ3Fragment"
+        android:name="com.samco.trackandgraph.faq.FAQ3Fragment"
+        android:label="@string/faq_3" />
+    <fragment
+        android:id="@+id/FAQ4Fragment"
+        android:name="com.samco.trackandgraph.faq.FAQ4Fragment"
+        android:label="@string/faq_4" />
+    <fragment
+        android:id="@+id/FAQ5Fragment"
+        android:name="com.samco.trackandgraph.faq.FAQ5Fragment"
+        android:label="@string/faq_5" />
+    <fragment
+        android:id="@+id/FAQ6Fragment"
+        android:name="com.samco.trackandgraph.faq.FAQ6Fragment"
+        android:label="@string/faq_6" />
+    <fragment
+        android:id="@+id/FAQ7Fragment"
+        android:name="com.samco.trackandgraph.faq.FAQ7Fragment"
+        android:label="@string/faq_7" />
+    <fragment
+        android:id="@+id/rateAppRedirectFragment"
+        android:name="com.samco.trackandgraph.rateapp.RateAppRedirectFragment"
+        android:label="RateAppRedirectFragment" />
+    <fragment
+        android:id="@+id/remindersFragment"
+        android:name="com.samco.trackandgraph.reminders.RemindersFragment"
+        android:label="@string/reminders" />
+    <fragment
+        android:id="@+id/notesFragment"
+        android:name="com.samco.trackandgraph.notes.NotesFragment"
+        android:label="@string/notes" />
+</navigation>

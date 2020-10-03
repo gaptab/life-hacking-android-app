@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ScrollView
+            android:id="@+id/scrollView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:id="@+id/baseLinearLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/card_padding"
+                android:layout_marginTop="@dimen/card_padding"
+                android:layout_marginEnd="@dimen/card_padding"
+                android:orientation="vertical"
+                android:paddingBottom="60dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dialog_input_spacing"
+                    android:labelFor="@id/trackGroupNameText"
+                    android:text="@string/feature_name"
+                    android:textAppearance="@style/TextAppearance.Body" />
+
+                <EditText
+                    android:id="@+id/featureNameText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textCapSentences"
+                    android:maxLines="1" />
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/featureDescriptionText"
+                    style="@style/Style.ExpansiveTextInputStyle"
+                    android:inputType="textCapSentences"
+                    android:layout_marginTop="@dimen/dialog_input_spacing"
+                    android:hint="@string/feature_description_input_hint" />
+
+                <TextView
+                    android:id="@+id/featureTypeLabel"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/input_spacing_large"
+                    android:text="@string/feature_type"
+                    android:textAppearance="@style/TextAppearance.Body" />
+
+                <androidx.appcompat.widget.AppCompatSpinner
+                    android:id="@+id/featureTypeSpinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dialog_input_spacing"
+                    android:entries="@array/feature_types"
+                    android:spinnerMode="dropdown" />
+
+                <TextView
+                    android:id="@+id/numericToDurationModeHeader"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/input_spacing_large"
+                    android:text="@string/numeric_to_duration_mode_header"
+                    android:textAppearance="@style/TextAppearance.Body" />
+
+                <TextView
+                    android:id="@+id/durationToNumericModeHeader"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/input_spacing_large"
+                    android:text="@string/duration_to_numeric_mode_header"
+                    android:textAppearance="@style/TextAppearance.Body" />
+
+                <androidx.appcompat.widget.AppCompatSpinner
+                    android:id="@+id/durationNumericConversionModeSpinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dialog_input_spacing"
+                    android:entries="@array/numeric_duration_conversion_modes"
+                    android:spinnerMode="dropdown" />
+
+                <TextView
+                    android:id="@+id/discreteValuesTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/input_spacing_large"
+                    android:text="@string/discrete_values"
+                    android:textAppearance="@style/TextAppearance.Body" />
+
+                <LinearLayout
+                    android:id="@+id/discreteValues"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dialog_input_spacing"
+                    android:orientation="vertical" />
+
+                <ImageButton
+                    android:id="@+id/addDiscreteValueButton"
+                    style="@style/Style.AddBarButton"
+                    android:layout_marginTop="@dimen/dialog_input_spacing"
+                    android:layout_marginBottom="@dimen/dialog_input_spacing"
+                    android:contentDescription="@string/add_multiple_choice_answer_button_content_description"
+                    app:srcCompat="@drawable/add_icon" />
+
+                <CheckBox
+                    android:id="@+id/hasDefaultValueCheckbox"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/input_spacing_large"
+                    android:text="@string/use_default_value"
+                    android:textAppearance="@style/TextAppearance.Body" />
+
+                <TextView
+                    android:id="@+id/defaultValueHint"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/default_value_description_hint"
+                    android:textAppearance="@style/TextAppearance.Body" />
+
+                <EditText
+                    android:id="@+id/defaultNumericalInput"
+                    style="@style/Style.DataPointInputNumberStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dialog_input_spacing"
+                    android:hint="@string/default_value"
+                    android:importantForAutofill="no" />
+
+                <HorizontalScrollView
+                    android:id="@+id/defaultDiscreteScrollView"
+                    style="@style/Style.DiscreteValueButtonsScrollViewStyle"
+                    android:layout_marginTop="@dimen/dialog_input_spacing">
+
+                    <LinearLayout
+                        android:id="@+id/defaultDiscreteButtonsLayout"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:orientation="horizontal" />
+                </HorizontalScrollView>
+
+                <com.samco.trackandgraph.ui.DurationInputView
+                    android:id="@+id/defaultDurationInput"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal" />
+            </LinearLayout>
+        </ScrollView>
+
+        <include
+            android:id="@+id/addBar"
+            layout="@layout/validate_add_footer" />
+
+        <FrameLayout
+            android:id="@+id/progressBar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clickable="true"
+            android:focusable="true">
+
+            <ProgressBar
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center" />
+        </FrameLayout>
+    </FrameLayout>
+
+</layout>

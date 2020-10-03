@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardView"
+                android:layout_width="match_parent"
+                android:layout_height="90dp"
+                android:layout_gravity="center"
+                android:layout_margin="5dp"
+                android:clickable="true"
+                android:focusable="true"
+                android:foreground="?android:attr/selectableItemBackground"
+                app:cardCornerRadius="@dimen/card_corner_radius">
+
+                <TextView
+                    android:id="@+id/graphStatGroupNameText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="8dp"
+                    android:padding="@dimen/card_padding"
+                    android:textAppearance="@style/TextAppearance.Headline6"
+                    tools:text="Group Name that spans over two lines eventually" />
+
+                <ImageView
+                    android:id="@+id/cornerTabImage"
+                    android:layout_width="140dp"
+                    android:layout_height="70dp"
+                    android:layout_gravity="bottom|end"
+                    android:tint="?attr/colorPrimary"
+                    app:srcCompat="@drawable/group_tab_corner"
+                    tools:ignore="ContentDescription" />
+
+                <ImageView
+                    android:id="@+id/trackIcon"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_gravity="bottom|end"
+                    android:paddingBottom="3dp"
+                    android:tint="@color/ap_white"
+                    app:srcCompat="@drawable/add_box"
+                    tools:ignore="ContentDescription" />
+
+                <ImageView
+                    android:id="@+id/graphIcon"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_gravity="bottom|end"
+                    android:paddingBottom="3dp"
+                    android:tint="@color/ap_white"
+                    app:srcCompat="@drawable/graph_icon"
+                    tools:ignore="ContentDescription" />
+            </androidx.cardview.widget.CardView>
+        </FrameLayout>
+
+        <ImageButton
+            android:id="@+id/menuButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top|end"
+            android:background="@null"
+            android:padding="10dp"
+            android:tint="?attr/colorControlNormal"
+            app:srcCompat="@drawable/list_menu_icon" />
+    </FrameLayout>
+</layout>

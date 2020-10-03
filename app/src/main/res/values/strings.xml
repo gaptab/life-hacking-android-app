@@ -1,0 +1,350 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+  ~ This file is part of Life Hacking
+  ~ 
+  ~ Life Hacking is free software: you can redistribute it and/or modify
+  ~ it under the terms of the GNU General Public License as published by
+  ~ the Free Software Foundation, either version 3 of the License, or
+  ~ (at your option) any later version.
+  ~ 
+  ~ Life Hacking is distributed in the hope that it will be useful,
+  ~ but WITHOUT ANY WARRANTY; without even the implied warranty of
+  ~ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+  ~ GNU General Public License for more details.
+  ~ 
+  ~ You should have received a copy of the GNU General Public License
+  ~ along with Life Hacking.  If not, see <https://www.gnu.org/licenses/>.
+  -->
+<resources>
+    <string name="home">Home</string>
+    <string name="track_group">Track Group</string>
+    <string name="graph_group">Graph Group</string>
+    <string name="add_track_group">Add A Track Group: </string>
+    <string name="add_feature">Track something:</string>
+    <string name="add">Add</string>
+    <string name="group_name">e.g. Daily Activities</string>
+    <string name="add_graph_stat_group">Add A Graph Group: </string>
+    <string name="delete">Delete</string>
+    <string name="rename">Rename</string>
+    <string name="edit">Edit</string>
+    <string name="update">Update</string>
+    <string name="new_name">New name: </string>
+    <string name="graph_or_stat_name">Graph name: </string>
+    <string name="feature_name">What would you like to track?</string>
+    <string name="feature_type">What type of data is this?</string>
+    <string name="yes">Yes</string>
+    <string name="cancel">Cancel</string>
+    <string name="select_file">Select File</string>
+    <string name="no_groups_hint">Welcome to Life hacking!\n\n Tap here to create your first track group and get started.</string>
+    <string name="no_features_hint">Tap the + icon to start tracking something.</string>
+    <string name="no_graph_stats_hint">Tap the + icon to create a new graph or statistic.</string>
+    <string name="no_features_graph_stats_hint">There is nothing to do here just yet.\n\nPlease create a Track Group and track some data before creating any graphs.</string>
+    <string name="ru_sure_del_group">Are you sure you want to delete this group and everything in it? You can not reverse this.</string>
+    <string name="ru_sure_del_feature">Are you sure you want to delete this tracked data?</string>
+    <string name="ru_sure_del_data_point">Are you sure you want to delete this data point?</string>
+    <string name="export_file_name_suffix">%1$s-%2$s-%3$04d%4$02d%5$02d-%6$02d%7$02d%8$02d.csv</string>
+    <string name="backup_file_name_suffix">%1$s-%2$04d%3$02d%4$02d-%5$02d%6$02d%7$02d.db</string>
+    <string name="discrete_values">Add some choices below.</string>
+    <string name="feature_name_cannot_be_null">Please add a name</string>
+    <string name="feature_with_that_name_exists">You are already tracking something with that name</string>
+    <string name="discrete_value_must_have_name">Please make sure all your choices have names</string>
+    <string name="discrete_feature_needs_at_least_two_values">Please add at least two multiple choice answers</string>
+    <string name="data_points">%1$d Tracked</string>
+    <string name="no_data">No Data</string>
+    <string name="add_data_point_hint">Enter a value for:</string>
+    <string name="skip">Skip</string>
+    <string name="exportButton">Export</string>
+    <string name="importButton">Import</string>
+    <string name="export_to">Export to:</string>
+    <string name="import_from">Import from:</string>
+    <string name="import_warning">Warning: Importing is irreversible. Life Hacking will try to merge any imported data with existing data in this track group by name.</string>
+    <string name="graphs_and_statistics"><![CDATA[Graphs & Statistics]]></string>
+    <string name="add_a_graph_or_stat">Add a Graph or Statistic</string>
+    <string name="graph_type_label">Graph type:</string>
+    <string name="maximum_sample_duration">Sample size:</string>
+    <string name="select_a_discrete_feature">Select a multiple choice data set: </string>
+    <string name="no_discrete_features_pie_chart">You can not currently create a pie chart because you are not tracking anything multiple choice.</string>
+    <string name="select_a_feature">Select a data set:</string>
+    <string name="offset">Offset:</string>
+    <string name="scale">Scale:</string>
+    <string name="from">From:</string>
+    <string name="to">To:</string>
+    <string name="select_a_value_range">Select a value range:</string>
+    <string name="graph_name_hint">e.g. Exercise: weekly moving average</string>
+    <string name="day">Day</string>
+
+    <string-array name="time_histogram_windows">
+        <item>Hourly</item>
+        <item>Daily</item>
+        <item>Weekly</item>
+        <item>Monthly</item>
+        <item>Quaterly</item>
+        <item>Biyearly</item>
+        <item>Yearly</item>
+    </string-array>
+    <string-array name="date_formats">
+        <item>dd/mm/yy</item>
+        <item>mm/dd/yy</item>
+        <item>yy/mm/dd</item>
+    </string-array>
+    <string-array name="theme_names_pre_Q">
+        <item>Battery Saver</item>
+        <item>Light</item>
+        <item>Dark</item>
+    </string-array>
+    <string-array name="theme_names_Q">
+        <item>System Default</item>
+        <item>Light</item>
+        <item>Dark</item>
+    </string-array>
+    <string-array name="numeric_duration_conversion_modes">
+        <item>Number of hours</item>
+        <item>Number of minutes</item>
+        <item>Number of seconds</item>
+    </string-array>
+    <string-array name="feature_types">
+        <item>Multiple choice</item>
+        <item>Numerical</item>
+        <item>Time duration</item>
+    </string-array>
+    <string-array name="graph_types">
+        <item>Line Graph</item>
+        <item>Pie Chart</item>
+        <item>Average Time Between</item>
+        <item>Time Since</item>
+        <item>Time Histogram</item>
+    </string-array>
+    <string-array name="line_graph_feature_modes">
+        <item>No Averaging</item>
+        <item>Daily Moving Average</item>
+        <item>Three Day Moving Average</item>
+        <item>Weekly Moving Average</item>
+        <item>Monthly Moving Average</item>
+        <item>Three Month Moving Average</item>
+        <item>Six Month Moving Average</item>
+        <item>Yearly Moving Average</item>
+    </string-array>
+    <string-array name="line_graph_generation_modes">
+        <item>Plot When Tracked</item>
+        <item>Plot Hourly Totals</item>
+        <item>Plot Daily Totals</item>
+        <item>Plot Weekly Totals</item>
+        <item>Plot Monthly Totals</item>
+        <item>Plot Yearly Totals</item>
+    </string-array>
+    <string-array name="graph_time_durations">
+        <item>All Data</item>
+        <item>A Day</item>
+        <item>A Week</item>
+        <item>A Month</item>
+        <item>Three Months</item>
+        <item>Six Months</item>
+        <item>A Year</item>
+    </string-array>
+    <string-array name="y_range_styles">
+        <item>Dynamic</item>
+        <item>Fixed</item>
+    </string-array>
+    <string-array name="ending_at_values">
+        <item>Latest</item>
+        <item>Custom date…</item>
+    </string-array>
+
+
+    <string name="import_exception_unknown">Import failed: An unknown error occurred</string>
+    <string name="import_exception_bad_headers">Import failed: Headers did not match the expected headers: %1$s</string>
+    <string name="import_exception_inconsistent_record">Import failed: Record on line %1$s is not consistent with required headers</string>
+    <string name="import_exception_bad_timestamp">Import failed: Could not interpret the timestamp for record on line: %1$s</string>
+    <string name="import_exception_inconsistent_data_type">Import failed: Received inconsistent data type on line: %1$s</string>
+    <string name="import_exception_bad_discrete_value">Import failed: Failed to read multiple choice value on line: %1$s</string>
+    <string name="import_exception_discrete_value_conflict">Import failed: multiple choice value conflict on line: %1$s</string>
+    <string name="import_exception_discrete_value_index_exists">Import failed: Failed to read multiple choice value on line: %1$s, index %2$s already exists</string>
+    <string name="import_exception_discrete_value_label_exists">Import failed: Failed to read multiple choice value on line: %1$s, label %2$s exists with a different index</string>
+    <string name="import_exception_feature_name_too_long">Import failed: name too long on line: %1$s</string>
+    <string name="import_exception_max_discrete_values_reached">Import failed: Max multiple choice values for a feature is: %1$s</string>
+
+    <string name="graph_stat_validation_unknown">An unknown error occurred</string>
+    <string name="graph_stat_validation_no_name">Please provide a name</string>
+    <string name="graph_stat_validation_no_line_graph_features">Please add something to the graph</string>
+    <string name="graph_stat_validation_invalid_value_stat_discrete_value">Please select at least one multiple choice answer</string>
+    <string name="graph_stat_validation_invalid_value_stat_from_to">Please make sure that "From" is smaller than or equal to "To"</string>
+    <string name="graph_stat_validation_unrecognised_color">Please make sure all data sets have a color</string>
+    <string name="graph_stat_validation_invalid_line_graph_feature">Invalid line graph data set detected</string>
+    <string name="graph_stat_validation_bad_fixed_range">Please make sure that "From" is smaller than "To"</string>
+
+    <string name="graph_stat_view_invalid_setup">Complete the setup to see a preview</string>
+    <string name="graph_stat_view_not_found">An error occurred while finding this graph</string>
+    <string name="graph_stat_view_not_enough_data_stat">This statistic will show when enough data has been tracked to generate it.</string>
+    <string name="graph_stat_view_not_enough_data_graph">This graph will show when enough data has been tracked to generate it.</string>
+    <string name="finish">Finish</string>
+    <string name="about_description"><![CDATA[Life Hacking is free and open source software under the GPL 3.0 License.]]></string>
+    <string name="github_link">https://github.com/gaptab/life-hacking-android-app</string>
+    <string name="play_store_page_link">https://play.google.com/</string>
+    <string name="github_link_friendly">github.com/gaptab/life-hacking-android-app</string>
+    <string name="about_libraries_message">The following open source libraries were used:</string>
+    <string name="androidplot">Androidplot</string>
+    <string name="apache_2_0">Apache 2.0</string>
+    <string name="apache_commons_csv">Apache Commons CSV</string>
+    <string name="three_ten_android_backport">Three Ten Android Backport</string>
+    <string name="timber">Timber</string>
+    <string name="about">About</string>
+    <string name="nav_header_title"><![CDATA[Life Hacking]]></string>
+
+    <string name="faq_1">How do I start tracking something?</string>
+    <string name="faq_2">How do I import / export what I have tracked?</string>
+    <string name="faq_3">How does multiple choice data work?</string>
+    <string name="faq_4">How do I start creating graphs?</string>
+    <string name="faq_5">How are moving averages and plot totals calculated?</string>
+    <string name="faq_6">How do notes work?</string>
+    <string name="faq">FAQ</string>
+    <string name="faq_text_1_1">To begin tracking you will need to create at least one track group. Track groups allow you to separate out groups of things you might want to track at the same time. For example you may wish to create one group for your exercise routine and another for food types.</string>
+    <string name="faq_text_1_2">Your track groups will appear in your list of groups. You can order them easily by holding down on the item you want to move and then dragging it to a new position.</string>
+    <string name="faq_text_1_3">Once you’ve created your track group select it and then click the + icon to set up something new to track.</string>
+    <string name="faq_text_1_4">Type in the name of what you want to track and select an input style:</string>
+    <string name="faq_text_1_5">There are three styles of input you can choose: \n\n• Multiple choice requires you to manually set up predefined answers that will be presented to you as buttons when tracking.\n\n• Numerical will ask you to enter a number when tracking.\n\n• Time duration will ask you to enter an amount of time in hours, minutes and seconds when tracking. \n\nIf you add a default value you will not be asked for a value every time you tap the + button and your default value will be used instead. However you can go back and change the value by editing the data point afterwards (as explained later).</string>
+    <string name="faq_text_1_6">To create multiple choice answers click the + button at the bottom.</string>
+    <string name="faq_text_1_8">When you are happy with the setup click the FINISH button.</string>
+    <string name="faq_text_1_9">You should now see cards in your track group. You can order them easily by holding down on the item you want to move and then dragging it to a new position.</string>
+    <string name="faq_text_1_10">You can track things individually by using their + buttons or track everything in the group quickly by using the action button:</string>
+    <string name="faq_text_1_11">Don\'t worry if you make a mistake you can always see, review and edit your tracking history by simply tapping on the card.</string>
+    <string name="faq_text_2_1">To import/export your tracked data first select a track group and notice the menu buttons at the top:</string>
+    <string name="faq_text_2_2">Use this button to import a csv into this track group.</string>
+    <string name="faq_text_2_3">Use this button to export this track group to a csv.</string>
+    <string name="faq_text_3_1">Using the multiple choice input type is recommended wherever possible. If you ever want to draw a pie chart from your data you will need it to be in multiple choice form. You can also draw a line graph of your data over time if your predefined answers have a natural order. For example say you were to setup the following:</string>
+    <string name="faq_text_3_2">And then you tracked some data as follows:</string>
+    <string name="faq_text_3_3">You could then visualise that data using either a line graph over time or using a pie chart as below:</string>
+    <string name="faq_text_4_1"><![CDATA[To begin creating graphs you will need to first have some data tracked. Then go to the home page and create a new graph group. Your graph groups do not have to align in any way with your track groups, you can organise them how you want.]]></string>
+    <string name="faq_text_4_3">Your graph groups will appear in your list of groups. You can order them easily by holding down on the item you want to move and then dragging it to a new position.</string>
+    <string name="faq_text_4_4">Once you’ve created your graph group select it and then click the + icon to set up a new graph or statistic.</string>
+    <string name="faq_text_4_5">Begin by entering a name for your new graph and then select a graph type. Here we will demonstrate the line graph since other graph types are relatively trivial to set up. One caveat to note however is that you can only create pie charts from multiple choice data.</string>
+    <string name="faq_text_4_6">The Dynamic range style will automatically calculate the min and max value for the Y axis. Now we will add some lines to our graph by using the + button at the bottom:</string>
+    <string name="faq_text_4_7">Because our wheat values are multiple choice answers ranging from 0–2 and our stomach pain values are numbers ranging from 1–8 we have multiplied our wheat values by 4 to make the ranges similar. We have used a three day moving average to smooth out anomalies and reduce noise in the output graph. We have also selected plot when tracked because this data was tracked relatively consistently. You can read more about how these settings affect line graphs in the FAQ: “How are moving averages and plot totals calculated?”</string>
+    <string name="faq_text_4_8">Next we click the FINISH button to complete the setup. Notice how our new graph appears as a card in our graph group:</string>
+    <string name="faq_text_4_9">To explore the graph in more detail you can tap the card to open it in a full screen view and then pinch and drag the lines:</string>
+    <string name="faq_text_4_10">As we add more graphs and statistics to our graph group they appear as a list of cards. You can reorder them at any point by holding down and dragging a card to a new position.</string>
+    <string name="faq_text_5_1">Moving averages:</string>
+    <string name="faq_text_5_2">Suppose we want to track something simply as a yes or no question, for example:</string>
+    <string name="faq_text_5_3">If we were to track this data over time without using a moving average it might look like this:</string>
+    <string name="faq_text_5_4">This output is very accurate but not very helpful. To make it easier to understand the data we could use a monthly moving average:</string>
+    <string name="faq_text_5_5">Now instead of plotting each data point with the recorded Y value (0 or 1), each Y value is calculated as the mean of itself and all previous data points within the selected time range prior.</string>
+    <string name="faq_text_5_6">Generally speaking the longer the selected averaging period the smoother the curve will appear. However note that moving averages are lagging indicators. The longer the averaging period, the further behind the real value the curve will lag.</string>
+    <string name="faq_text_5_7">Plot totals:</string>
+    <string name="faq_text_5_8">Some things you may only want to track rarely. For example, you may want to track when you finish reading a book:</string>
+    <string name="faq_text_5_9">Suppose you tracked the following:</string>
+    <string name="faq_text_5_10">You may or may not then be surprised to find that your graph appears as follows:</string>
+    <string name="faq_text_5_11">The problem is that lines are drawn only from each plotted value to the next plotted value. Since all plotted values are interpreted as 1 you only see a straight line at the point 1 on the Y axis.</string>
+    <string name="faq_text_5_12">We can fix this using plot totals. For example if we plot monthly totals we would see the following graph:</string>
+    <string name="faq_text_5_13">Notice a point is plotted at the end of each month representing the total of all tracked values in that month.</string>
+    <string name="faq_text_5_14">You can use scale, offset, averaging and totals all at once. The order of precedence is as follows:</string>
+    <string name="faq_text_5_15">• First your data is converted to totals\n\n• Then each point is converted to its moving average\n\n• Then your points are multiplied by the scale value\n\n• Finally the offset is added to each point</string>
+    <string name="faq_text_6_1">Notes allow you to keep track of qualitative data alongside your quantitative data. There are two types of notes:\n\n• Global notes (added directly in the notes menu)\n\n• Data point notes (attached to specific data points)\n\nWhen adding a data point you may wish to track an important piece of information specific to that data set. For example:</string>
+    <string name="faq_text_6_2">After adding this note you will notice it shows up in a list underneath any graph of that data set. If you tap the note it will open in a dialog window and a marker will be added to the graph.</string>
+    <string name="faq_text_6_3">However some pieces of information might be relevant to all your data. In this case you can add a global note by tapping the plus button in the global notes menu:</string>
+    <string name="faq_text_6_4">You will notice this note now shows up underneath all graphs.</string>
+    <string name="faq_text_6_5">You can edit or delete any note from the notes menu. Deleting a data point note from the notes menu will not delete the data point its self, just the attached note.</string>
+    <string name="tutorial_text_1"><![CDATA[Everything in Life Hacking is organised into blue track groups and orange graph groups.]]></string>
+    <string name="tutorial_text_2">Use track groups to quickly track lots of things at the same time.</string>
+    <string name="tutorial_text_3">Use graph groups to investigate data from multiple track groups.</string>
+    <string name="got_it">Got it</string>
+    <string name="move_to_colon">Move to:</string>
+    <string name="move_to">Move to</string>
+
+    <string name="feature_add_or_update_error_occurred">An error occurred, your changes could not be made.</string>
+    <string name="ru_sure_update_feature">This update may irreversibly modify the data you have already tracked. It is highly recommended that you backup existing data before continuing.\n\n Would you like to continue?</string>
+    <string name="warning">Warning</string>
+    <string name="ok">OK</string>
+    <string name="on_feature_type_change_numerical_warning">If you update your input type to numerical your existing tracked data will lose its labels.</string>
+    <string name="on_feature_delete_discrete_value_warning">Deleting multiple choice answers will delete all existing tracked data points for that value.</string>
+
+    <string name="my_first_track_group">My first track group</string>
+    <string name="rate_the_app">Rate the app</string>
+    <string name="reminders">Reminders</string>
+    <string name="no_reminders_hint">Tap the + icon to create a new tracking reminder notification.</string>
+    <string name="mon">Mon</string>
+    <string name="tue">Tue</string>
+    <string name="wed">Wed</string>
+    <string name="thu">Thu</string>
+    <string name="fri">Fri</string>
+    <string name="sat">Sat</string>
+    <string name="sun">Sun</string>
+    <string name="reminders_notifications_channel_name">Reminders</string>
+    <string name="reminders_notifications_channel_description">User created notifications to remind you when to track</string>
+    <string name="default_reminder_name">Time to track!</string>
+    <string name="range_style">Range style:</string>
+
+    <string name="track_widget_configure_no_data_error">Please create a track group and track some data first.</string>
+    <string name="track_widget_configure_no_data_selected_error">You must select a valid data set to create a tracking widget.</string>
+    <string name="create">Create</string>
+    <string name="use_default_value">Set a default value</string>
+    <string name="default_value_description_hint">(Your default will be used automatically when you add a data point but you can always go back and change it.)</string>
+    <string name="check_all_relevant_values">Check all relevant values: </string>
+    <string name="backup_and_restore">Backup and Restore</string>
+    <string name="backup_hint_text">Backup saves all of your app data including all tracked data, graphs and reminders. You should back up your data to an external device or cloud storage regularly in case your device gets lost or broken.</string>
+    <string name="restore_hint_text">WARNING: Restoring from a backup will erase all data and setup currently in the app. Life Hacking will restart after the restore is complete.</string>
+    <string name="backup_data">Backup data</string>
+    <string name="restore_data">Restore data</string>
+    <string name="backup_successful">Backup Successful!</string>
+    <string name="backup_failed">Backup failed. %1$s</string>
+    <string name="backup_error_could_not_write_to_file">Could not find or write to the selected file.</string>
+    <string name="restore_error_could_not_write_to_database">Could not find or write to the database.</string>
+    <string name="restore_error_could_not_read_from_database_file">Could not find or read the selected database file.</string>
+    <string name="backup_error_could_not_find_database_file">Could not find or read database file.</string>
+    <string name="backup_error_failed_to_copy_database">Something went wrong while copying the database file.</string>
+    <string name="restore_error_failed_to_copy_database">Something went wrong while restoring the database.</string>
+    <string name="restore_failed">Restore failed. %1$s</string>
+    <string name="feature_description_input_hint">Add a longer description (optional)</string>
+    <string name="no_data_points_history_fragment_hint">Your tracking history will show up here when you have input some data.</string>
+    <string name="info">Info</string>
+    <string name="no_description">No description</string>
+    <string name="description">Description</string>
+    <string name="note_input_hint">Notes…</string>
+    <string name="add_a_note">Add a note</string>
+    <string name="notes">Notes</string>
+    <string name="faq_text_2_4">There is also a Backup &amp; Restore option in the menu. This will export and restore the entire database file containing all tracked data, graphs, reminders etc. This is an un-encrypted Sqlite3 database file which can also be opened and modified using freely available software. However this is not recommended for non-technical users as you could break the integrity of the database.</string>
+    <string name="delete_reminder_content_description">Delete Reminder</string>
+    <string name="theme_colon">Theme:</string>
+    <string name="date_format_colon">Date format:</string>
+    <string name="add_data_point_button_content_description">Add a data point button</string>
+    <string name="tracked_data_menu_button_content_description">Tracked data menu button</string>
+    <string name="tracked_data_history_button_content_description">Tracked data history button</string>
+    <string name="delete_line_button_content_description">Delete line button</string>
+    <string name="delete_data_point_button_content_description">Delete data point button</string>
+    <string name="edit_data_point_button_content_description">Edit data point button</string>
+    <string name="add_line_button_content_description">Add line button</string>
+    <string name="add_multiple_choice_answer_button_content_description">Add multiple choice answer button</string>
+    <string name="ending_at_colon">Sample ending at:</string>
+    <string name="duplicate">Duplicate</string>
+    <string name="no_notes_hint_text">Notes added when tracking will show up here. You can also add global notes using the + button.</string>
+    <string name="add_a_global_note">Add a global note:</string>
+    <string name="weeks">Weeks</string>
+    <string name="months">Months</string>
+    <string name="days">Days</string>
+    <string name="hours">Hours</string>
+    <string name="minutes">Minutes</string>
+    <string name="seconds">Seconds</string>
+    <string name="hours_suffix">h</string>
+    <string name="minutes_suffix">m</string>
+    <string name="seconds_suffix">s</string>
+    <string name="default_value">Default value</string>
+    <string name="numeric_to_duration_mode_header">Previously tracked values represent:</string>
+    <string name="duration_to_numeric_mode_header">What should previously tracked values be converted to:</string>
+    <string name="graph_stat_validation_mixed_time_value_line_graph_features">You can not mix time durations with other types of data. Consider plotting hours, minutes or seconds</string>
+    <string name="time_duration">Time duration</string>
+    <string name="select_a_duration_range">Select a duration range</string>
+    <string name="number_of_bins">Number of bins:</string>
+    <string name="sum_by_count_checkbox_label">Check here to count the number of data points tracked rather than the total of their values.</string>
+    <string name="time_window_size">Time window size:</string>
+    <string name="faq_7">How do time histograms work?</string>
+    <string name="faq_text_7_1"><![CDATA[Histograms are useful for showing how data is distributed over a given domain. Time histograms in Life Hacking allow you to see how your data is distributed over various time periods.]]></string>
+    <string name="faq_text_7_2">For example imagine you had tracked 7 weeks worth of data on how much time you spent reading. You may wish to know on what days during the week do you typically spend the most time reading. Here you could use a time histogram with the following setup:</string>
+    <string name="faq_text_7_3">To generate the following histogram:</string>
+    <string name="faq_text_7_4">The histogram is calculated simply by taking every data point within the sample and adding its value to a \"bin\" based on which day of the week that value was tracked. So the day 1 bin represents the total of all data points tracked on Mondays divided by the total of all data points in the sample. Histograms are \"normalised\" meaning that the sum of all the heights of the bars (or the area under the graph) should add up to exactly 1. So for example if you only ever read on Fridays you would expect your histogram to only show one bar for Friday with height 1.</string>
+    <string name="faq_text_7_5">If you read on Saturday 50% of the time and on Friday 50% of the time you would expect your histogram to look like this:</string>
+    <string name="faq_text_7_6"><![CDATA[If the data you are tracking is multiple choice then Life Hacking will show you the distribution within each bar of the amount made up by each choice tracked like so:]]></string>
+    <string name="faq_text_7_7">By default the height of each bar is relative to the sum of all the data point values that fall in that time range. However if the value of each of your choices should be the same (i.e. the choices represent un-ordered discrete data) then your histogram will be incorrectly skewed like so:</string>
+    <string name="faq_text_7_8">(notice the index of Sparrow is 0 so it doesn\'t even show up on the histogram)</string>
+    <string name="faq_text_7_9">To fix this you can check the box marked: \"Check here to count the number of data points tracked rather than the total of their values.\"</string>
+    <string name="faq_text_7_10">This way each multiple choice answer will be regarded as having the same weight in the histogram like so:</string>
+    <string name="faq_text_7_11">One final note to bare in mind is that your data may be skewed by the fact that you have not tracked data for each histogram bin yet or have not tracked them all equally yet. So for example if you are drawing a yearly histogram but have only been tracking for 6 months then your histogram may look like this:</string>
+    <string name="faq_text_7_12">And a year later it may look like this:</string>
+    <string name="faq_text_7_13">Over time however this skew will tend to 0. Therefore the more data you have tracked the more accurate the histogram will be.</string>
+</resources>

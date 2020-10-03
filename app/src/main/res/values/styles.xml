@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+  ~ This file is part of Life Hacking
+  ~ 
+  ~ Life Hacking is free software: you can redistribute it and/or modify
+  ~ it under the terms of the GNU General Public License as published by
+  ~ the Free Software Foundation, either version 3 of the License, or
+  ~ (at your option) any later version.
+  ~ 
+  ~ Life Hacking is distributed in the hope that it will be useful,
+  ~ but WITHOUT ANY WARRANTY; without even the implied warranty of
+  ~ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+  ~ GNU General Public License for more details.
+  ~ 
+  ~ You should have received a copy of the GNU General Public License
+  ~ along with Life Hacking.  If not, see <https://www.gnu.org/licenses/>.
+  -->
+<resources>
+    <style name="Style.AddBarButton" parent="Widget.AppCompat.Button.Colored">
+        <item name="android:background">?attr/colorControlHighlight</item>
+        <item name="android:foreground">?attr/selectableItemBackground</item>
+        <item name="tint">?attr/colorControlNormal</item>
+        <item name="android:layout_marginStart">50dp</item>
+        <item name="android:layout_marginEnd">50dp</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">30dp</item>
+    </style>
+
+    <style name="Style.ButtonStyle" parent="Widget.AppCompat.Button.Colored">
+        <item name="colorControlHighlight">?attr/colorControlHighlight</item>
+        <item name="colorControlNormal">?attr/colorAccent</item>
+    </style>
+
+    <style name="Style.OverflowMenuStyle" parent="Widget.AppCompat.PopupMenu.Overflow">
+        <item name="android:popupBackground">?attr/colorSurface</item>
+    </style>
+
+    <style name="Style.CardViewStyle" parent="Widget.MaterialComponents.CardView">
+        <item name="cardBackgroundColor">?attr/colorSurface</item>
+    </style>
+
+    <style name="Style.OverflowButtonStyle" parent="Widget.AppCompat.ActionButton.Overflow">
+        <item name="android:tint">?attr/colorControlNormal</item>
+    </style>
+
+    <style name="Style.Toolbar" parent="Widget.AppCompat.Toolbar">
+        <item name="android:background">?attr/toolbarBackgroundColor</item>
+        <item name="titleTextColor">?attr/colorControlNormal</item>
+    </style>
+
+    <style name="Style.EditTextStyle" parent="Widget.AppCompat.EditText">
+        <item name="colorControlActivated">?attr/colorSecondary</item>
+        <item name="colorControlHighlight">?attr/colorSecondary</item>
+        <item name="backgroundTint">?attr/colorSecondary</item>
+    </style>
+
+    <style name="Style.EmptyPageHintTextStyle" parent="Widget.AppCompat.TextView">
+        <item name="android:layout_width">250dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textAppearance">@style/TextAppearance.Subtitle2</item>
+        <item name="android:alpha">0.6</item>
+        <item name="android:textAlignment">center</item>
+    </style>
+
+    <style name="Style.DataPointInputNumberStyle" parent="Widget.AppCompat.EditText">
+        <item name="android:gravity">center</item>
+        <item name="android:inputType">numberDecimal|numberSigned</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:digits">0123456789.,-</item>
+        <item name="android:hint">0</item>
+    </style>
+
+    <style name="Style.DiscreteValueButtonsScrollViewStyle" parent="">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">80dp</item>
+        <item name="android:scrollbars">none</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+    </style>
+
+    <style name="Style.ExpansiveTextInputStyle" parent="Widget.AppCompat.EditText">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:padding">12dp</item>
+        <item name="android:background">@drawable/expansive_text_box_background</item>
+        <item name="backgroundTint">@null</item>
+        <item name="android:inputType">textMultiLine|textAutoCorrect|textCapSentences</item>
+    </style>
+
+    <style name="Style.FAQMenuItem" parent="Widget.AppCompat.TextView">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">?android:attr/selectableItemBackground</item>
+        <item name="android:clickable">true</item>
+        <item name="android:focusable">true</item>
+        <item name="android:padding">20dp</item>
+        <item name="android:textAppearance">@style/TextAppearance.Subtitle2</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+</resources>
